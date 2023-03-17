@@ -87,16 +87,6 @@ progress_bars__action.onclick = function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
 //slideshows
 let slideshows__imgs = document.querySelectorAll(".slideshows__img")
 let slideshows__prev = document.querySelector(".slideshows__prev")
@@ -110,7 +100,7 @@ function slideshow(){
     })
 
     if(currentIndex < 0){
-        currentIndex = slideshows__imgs.length
+        currentIndex = slideshows__imgs.length - 1
     }
 
     if(currentIndex >= slideshows__imgs.length){
