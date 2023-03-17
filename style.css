@@ -67,6 +67,7 @@ hr{
     z-index: 5;
     border-radius: 10px;
     background-color: var(--bg-opacity);
+    
 }
 .button-colors__item{
     width: 20px;
