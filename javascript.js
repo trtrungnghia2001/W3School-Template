@@ -1,28 +1,30 @@
 
+/*root*/
+let root =document.querySelector(":root")
 
+let rs = getComputedStyle(root)
 
-let button_colors__items = document.querySelectorAll(".button-colors__item")
-let root = document.querySelector(":root")
+let color = rs.getPropertyValue("--color")
+let black = rs.getPropertyValue("--black")
+let red = rs.getPropertyValue("--red")
+let teal = rs.getPropertyValue("--teal")
 
-button_colors__items.forEach(button=>{
-    let color = button.style.backgroundColor 
-    // console.log(color)
+// console.log(color, black, red, teal)
+// root.style.setProperty('--color', black)
+// root.style.setProperty('--color', red)
+// root.style.setProperty('--color', teal)
 
-    button.addEventListener("click",function(){
-        root.style.setProperty('--color', color)
-    })
-})
+console.log(color, black, red, teal)
 
-let button_colors__item = document.querySelector(".button_colors__item")
-console.log(button_colors__item)
-
-
-
-
-
-
-
-
+document.querySelector(".button-colors__item:nth-child(1)").onclick = function(){
+    root.style.setProperty('--color', black)
+}
+document.querySelector(".button-colors__item:nth-child(2)").onclick = function(){
+    root.style.setProperty('--color', red)
+}
+document.querySelector(".button-colors__item:nth-child(3)").onclick = function(){
+    root.style.setProperty('--color', teal)
+}
 
 
 //modal
