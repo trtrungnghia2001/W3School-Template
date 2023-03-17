@@ -14,8 +14,7 @@ button_colors__items.forEach(button=>{
 })
 
 let button_colors__item = document.querySelector(".button_colors__item")
-console.log(button_colors__item.innerText)
-
+console.log(button_colors__item)
 
 
 
